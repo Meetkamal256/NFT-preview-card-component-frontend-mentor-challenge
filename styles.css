@@ -9,7 +9,7 @@
 :root{
     --Soft-blue: hsl(215, 51%, 70%);
     --Cyan: hsl(178, 100%, 50%);
-
+    
     --main-bg: hsl(217, 54%, 11%);
     --card-bg: hsl(216, 50%, 16%);
     --line: hsl(215, 32%, 27%);
@@ -139,6 +139,43 @@ body{
 
 .author a:hover{
     color: var(--Cyan);
+}
+
+@media (max-width: 425px){
+    #container{
+        max-width: 300px;
+    }
+    
+    .wrapper{
+        margin: 3rem 0.5rem;
+        padding: 15px;
+        box-shadow: 2px 2px 2px 15px rgba(0,0,0, 0.1);
+    }
+    
+    .box-text h5{
+        margin: 15px 0px;
+        font-size: 14px;
+    }
+    
+    .box-text p{
+        font-size: 13px;
+    }
+    
+    .flex .days p{
+        font-size: 13px;
+    }
+    
+    .flex .eth, .flex .days{
+        margin: 15px 0px;
+    }
+    
+    .author{
+        margin-top: 15px;
+    }
+        
+    .author p a {
+        font-size: 12px;
+    }
 }
 
 
