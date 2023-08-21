@@ -141,15 +141,15 @@ body{
     color: var(--Cyan);
 }
 
-@media (max-width: 425px){
+@media (max-width: 576px){
     #container{
         max-width: 300px;
     }
     
     .wrapper{
-        margin: 3rem 0.5rem;
+        margin: 2rem 1rem;
         padding: 15px;
-        box-shadow: 2px 2px 2px 15px rgba(0,0,0, 0.1);
+        box-shadow: 2px 2px 3px 15px rgba(0,0,0, 0.1);
     }
     
     .box-text h5{
