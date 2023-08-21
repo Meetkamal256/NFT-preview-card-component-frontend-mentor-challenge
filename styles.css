@@ -113,6 +113,10 @@ body{
     margin-right: 7px;
 }
 
+hr{
+    border-color: var(--Cyan);
+}
+
 .author{
     display: flex;
     align-items: center;
