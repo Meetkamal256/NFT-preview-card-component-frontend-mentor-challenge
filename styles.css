@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body{
+    font-size: 18px;
+    background-color: var(--main-bg);
+    font-family: 'outfits', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#container{
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.wrapper{
+    margin: 2rem 1rem;
+    padding: 20px;
+    background-color: var(--card-bg);
+    border-radius:  20px;
+    box-shadow: 2px 2px 0px 20px rgba(0,0,0, 0.1);
+}
+
+.img-top{
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.img-top .img-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color:  hsla(178, 100%, 50%, 0.5);
+  display: none;  
+}
+
+.img-top:hover .img-overlay{
+    display:block;
+}
+
+
+.img-top .img-overlay img{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+
+.img-top img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.box-text h5{
+    color: var(--White);
+    margin: 20px 0px
+}
+
+.box-text h5:hover{
+    color: var(--Cyan);
+}
+
+.box-text p{
+    color: var(--Soft-blue);
+    font-size: 15px;
+    line-height: 22px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex .eth p:hover{
+    color: var(--Cyan);
+}
+
+.flex .days p{
+    font-size: 13px;
+}
+
+.flex .eth, .flex .days{
+    display: flex;
+    margin: 20px 0px;
+    align-items: center;
+}
+
+.flex .eth img, .flex .days img{
+    margin-right: 7px;
+}
+
+.author{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.author img{
+    width: 30px;
+    height: 30px;
+    border: 2 px solid #fff;
+    border-radius: 50%;
+}
+
+.author p {
+    margin-left: 12px;
+    font-size: 13px;
+}
+
+.author a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.author a:hover{
+    color: var(--Cyan);
+}
+
+
+
+
+
+
+
+
+
+
+
